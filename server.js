@@ -15,6 +15,7 @@
 
   app.use(express.static(__dirname + '/public'));
   app.use('/styles', express.static(__dirname + '/node_modules/bootstrap/dist/css/'));
+  app.use('/images',  express.static(__dirname + '/images/'));
   app.use('/scripts',  express.static(__dirname + '/node_modules/bootstrap/dist/js/'));
   app.use('/scripts',  express.static(__dirname + '/node_modules/angular/'));
   app.use('/scripts',  express.static(__dirname + '/node_modules/angular-ui-bootstrap/dist/'));
